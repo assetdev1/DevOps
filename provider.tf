@@ -7,7 +7,7 @@ terraform {
  }
 
  backend "s3" {
-   bucket = "tf-state"
+   bucket = "assetdev-jenkins"
    key    = "state"
    region = "ap-south-2"
  }
