@@ -1,7 +1,7 @@
 variable "ami" {
    type        = string
    description = "Amazon linux in hyderabad region"
-   default     = "ami-075872fb4229ef867"
+   default     = "ami-0b8b346a5e8457d66"
 }
 
 variable "instance_type" {
