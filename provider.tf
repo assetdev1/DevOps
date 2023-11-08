@@ -6,9 +6,9 @@ terraform {
    }
  }
 provider "aws" {
-  access_key = var.aws_access_key
-  secret_key = var.aws_secret_key
-  region     = var.aws_region
+  access_key = "AKIAULUFSX7KSKXUINYV"
+  secret_key = "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"
+  region     = "ap-south-2"
 }
 
  backend "s3" {
