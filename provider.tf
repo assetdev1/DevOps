@@ -5,7 +5,9 @@ terraform {
      version = "~> 5.0"
    }
  }
- 
+ provider "aws" {
+  region = "ap-south-2"
+}
  backend "s3" {
    bucket = "assetdev-jenkins"
    key    = "state"
