@@ -1,3 +1,20 @@
+variable "aws_access_key" {
+  description = "AWS access key"
+  type        = string
+  default     = "AKIAULUFSX7KSKXUINYV"
+}
+
+variable "aws_secret_key" {
+  description = "AWS secret key"
+  type        = string
+  default     = "YdpNmWC12xmsTCeerqz15t+xgSIzbxmOy1D+QRL6"
+}
+
+variable "aws_region" {
+  description = "AWS region"
+  type        = string
+  default     = "ap-south-2"
+}
 variable "ami" {
    type        = string
    description = "Amazon linux in hyderabad region"
