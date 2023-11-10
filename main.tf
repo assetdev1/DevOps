@@ -1,8 +1,12 @@
-resource "aws_instance" "my_vm" {
- ami           = var.ami //Ubuntu AMI
- instance_type = var.instance_type
+provider "aws" {
+  region = "ap-south-2"
+}
 
- tags = {
-   Name = var.name_tag,
- }
+resource "aws_instance" "example" {
+  ami           = "ami-0b8b346a5e8457d66" # Use a valid AMI ID for your region
+  instance_type = "t3.micro"
+
+  tags = {
+    Name = "example-instance"
+  }
 }
